@@ -34,7 +34,7 @@ const Contact = () => {
   };
   const sendEmail = async () => {
     axios
-      .post(`/contact`, formState)
+      .post(`https://smsteelropes.herokuapp.com/contact`, formState)
       .then((res) => {
         setFormState({
           name: "",
