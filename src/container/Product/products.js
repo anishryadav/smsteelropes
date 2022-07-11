@@ -1,0 +1,58 @@
+const Products = [{
+        url: "https://firebasestorage.googleapis.com/v0/b/smsr-f0102.appspot.com/o/products%2Fcombination_rope1.avif?alt=media&token=bf759801-9406-4573-a0c1-fe992d9b5240",
+        alt: "Steelwire.jpg",
+        name: "Combination Fishing Rope",
+        feature: "Combination Fishing Ropes are used all over India in fishing industry. These ropes have a longer life, and are unaffected by sunlight and rust free.",
+        diameter: "12-16mm",
+        core: "PP",
+        stype: "Galavanized",
+    },
+    {
+        url: "https://firebasestorage.googleapis.com/v0/b/smsr-f0102.appspot.com/o/products%2Fgalvanisedrope1.avif?alt=media&token=7b74ab8a-1216-41e6-8967-cd7f0224ab68",
+        alt: "image.jpg",
+        name: "Galvanized Steel Wire Rope",
+        feature: "Galavanized Steel Wire Ropes are coated with a layer or zinc or aluminium. These ropes are majorly used outdoors leading to exposer to rain and sunlight.",
+        diameter: "6-24mm",
+        core: "Fibre",
+        stype: "Galvanized",
+    },
+    {
+        url: "https://firebasestorage.googleapis.com/v0/b/smsr-f0102.appspot.com/o/products%2Fcrane_rope2.avif?alt=media&token=470d179b-0ae7-481a-9807-2f30775f83e1",
+        alt: "image.jpg",
+        name: "Crane Rope",
+        feature: "Crane Ropes are high tensile ropes, since major of it's uses include lifting of heavy loads. These are mainly used in Hydra Crane or Overhead Hoist Crane.",
+        diameter: "16-24mm",
+        core: "Steel",
+        stype: "Ungalvanized",
+    },
+    {
+        url: "https://firebasestorage.googleapis.com/v0/b/smsr-f0102.appspot.com/o/products%2Fsteel.avif?alt=media&token=5cbc789a-2ef6-467c-8559-95b07ce21cbf",
+        alt: "image.jpg",
+        name: "Stainless Steel Wire Rope",
+        feature: "Stainless Steel Wire Ropes are mostly used in Solar Projects or Chemical Industries where customers need a longer rust free life of the rope.",
+        diameter: "6-8mm",
+        core: "Steel",
+        stype: "SS 304",
+    },
+
+    {
+        url: "https://firebasestorage.googleapis.com/v0/b/smsr-f0102.appspot.com/o/products%2Fstainless_steel1.avif?alt=media&token=555fa50b-8ce3-45aa-a975-d3449368d855",
+        alt: "image.jpg",
+        name: "Steel Wire Rope",
+        feature: "Steel Wire Ropes are different types of steel ropes used for various purposes. These are used in Lifts or in Construction and many more industries.",
+        diameter: "6-24mm",
+        core: "Fibre/Steel",
+        stype: `Galavanized/
+                Ungalvanized`,
+    },
+    {
+        url: "https://firebasestorage.googleapis.com/v0/b/smsr-f0102.appspot.com/o/products%2Fsling.avif?alt=media&token=4b38acb8-3a3e-4938-b7b6-7e911a28a588",
+        name: "Wire Rope Sling",
+        alt: "image.jpg",
+        feature: "wire Rope Sling are of different sizes and lengths, heavily to lift loads in various industries.They are looped on sides by aluminiumn ferrule. ",
+        diameter: "6-24mm",
+        core: "Steel/Fibre",
+        stype: "Ungalvanized",
+    },
+];
+export default Products;

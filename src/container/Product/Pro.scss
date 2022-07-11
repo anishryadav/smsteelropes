@@ -1,0 +1,134 @@
+.app__product {
+    background-color: var(--color-base);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    .head {
+        margin: 1rem 0;
+    }
+    .app__product-card {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        // row-gap: 2rem;
+        .product-card {
+            background-color: rgba(255, 255, 255, 0.5);
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px 5px rgba(196, 244, 244, 0.6);
+            margin-bottom: 2rem;
+            .card-image {
+                padding: 1.5rem;
+                img {
+                    width: 20vw !important;
+                    height: 20vw !important;
+                    border-radius: 10px;
+                    @media screen and (max-width: 568px) {
+                        width: 65vw !important;
+                        height: 65vw !important;
+                    }
+                }
+            }
+            .card-details {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                margin: 1.5rem 1rem;
+                column-gap: 2rem;
+                .heading {
+                    flex: .8 !important;
+                    .features {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    @media screen and(max-width: 768px) {
+                        .features {
+                            display: none;
+                        }
+                    }
+                }
+                .details {
+                    flex: 1 !important;
+                    .colDetail {
+                        display: flex;
+                        flex-direction: column;
+                        .header {
+                            display: flex;
+                            place-content: flex-end;
+                            align-items: center;
+                            justify-content: space-between;
+                            .contactBtn {
+                                border: none;
+                                background-color: var(--color-blue);
+                                padding: 3px 12px;
+                                color: white;
+                                border-radius: 20px;
+                                cursor: pointer;
+                                text-align: center;
+                                &:hover {
+                                    border-radius: 5px;
+                                }
+                            }
+                        }
+                        table {
+                            width: 100%;
+                            margin: 1rem 0;
+                            display: flex;
+                            // flex: 1;
+                            align-items: flex-start;
+                            justify-content: center;
+                            text-align: center;
+                            flex-direction: row;
+                            tr {
+                                width: 100%;
+                                display: flex;
+                                flex-direction: column;
+                            }
+                        }
+                        th,
+                        td {
+                            flex: 1;
+                            border: 1px solid white;
+                            // border-collapse: collapse;
+                            padding: 3px;
+                        }
+                        th {
+                            flex: .5 !important;
+                        }
+                    }
+                    @media screen and (max-width:568px) {
+                        table,
+                        tr,
+                        td,
+                        th,
+                        h4 {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            @media screen and (max-width:568px) {
+                .card-details {
+                    display: grid;
+                    width: 70vw;
+                    height: 15vw;
+                    grid-template-columns: 2fr 1fr;
+                    column-gap: 5px;
+                    position: absolute;
+                    padding: 0 1rem;
+                    background-color: rgba(255, 255, 255, .3);
+                    .contactBtn {
+                        padding: 0;
+                        font-size: 14px;
+                    }
+                    h4 {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,59 @@
+.app__about {
+    background-color: var(--color-base);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    .aboutData {
+        padding: 1rem 0 2rem;
+        width: 85vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .app__about-data {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            row-gap: 2rem;
+            p {
+                font-size: 18px;
+                font-weight: 500;
+                padding: 1rem 2rem;
+                text-align: center;
+                @media screen and (max-width: 768px) {
+                    font-size: 12px;
+                    padding-top: 0.5rem;
+                    padding-bottom: 0;
+                }
+            }
+            .app__about-data1,
+            .app__about-data2 {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: rgba(255, 255, 255, 0.4);
+                border-radius: 15px;
+                box-shadow: 5px 5px 10px 4px rgb(196, 244, 244);
+                img {
+                    width: 30vw !important;
+                    margin: 2rem;
+                    border-radius: 10px;
+                }
+                @media screen and (max-width:568px) {
+                    flex-direction: column;
+                    img {
+                        width: 80vw !important;
+                        margin: .5rem 2rem;
+                    }
+                }
+            }
+            @media screen and (max-width:568px) {
+                .app__about-data2 {
+                    flex-direction: column-reverse;
+                }
+            }
+        }
+    }
+}
